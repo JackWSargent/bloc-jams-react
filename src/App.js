@@ -7,12 +7,12 @@ import Album from './components/Album';
 function App() {
   return (
     <div className="App">
-      <header>
-        <nav>
-          <Link to='/'>Landing</Link>
-          <Link to='/library'>Library</Link>
+      <header className="nav-container d-flex h-100 p-3 mx-auto flex-column">
+        <nav className="nav nav-masthead justify-content-center">
+          <Link className="nav-link" to='/'>Home</Link>
+          <Link className="nav-link" to='/library'>Library</Link>
         </nav>
-        <h1>Bloc Jams</h1>
+        <h1 className="masthead-brand App-logo">Bloc Jams</h1>
       </header>
       <main>
         <Route exact path="/" component={Landing} />
